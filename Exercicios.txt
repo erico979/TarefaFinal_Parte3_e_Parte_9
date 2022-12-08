@@ -1,1 +1,74 @@
 Exercicios  
+17.
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int i;
+
+        Console.WriteLine("Escreva a idade da pessoa");
+        i = int.Parse(Console.ReadLine());
+
+        Idade(i);
+    }
+    static void Idade(int idade){
+
+      if(idade >= 18){
+
+        Console.WriteLine("A pessoa é maior de idade");
+      }
+      else{
+
+        Console.WriteLine("A pessoa é menor de idade");
+      }
+     }
+   }
+21.
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int A, B;
+
+      Console.WriteLine("Escreva o número de A");
+      A = int.Parse(Console.ReadLine());
+      Console.WriteLine("Escreva o número de B");
+      B = int.Parse(Console.ReadLine());
+
+      int n1 = A;
+      n1 = B;
+
+      Vice(B,A);
+    }
+    static void Vice(int num1, int num2){
+
+      Console.WriteLine("\nnúmeros invertidos:\n");
+      
+      Console.WriteLine("O número de A = {0}\nO número de B = {1}", num1, num2);
+    }
+}
+ 25.
+ using System;
+
+class Program {
+    static void Main(string[] args) {
+        int n1;
+
+        Console.WriteLine("Escreva o número");
+        n1 = int.Parse(Console.ReadLine());              
+        Console.Clear();
+        Calc(n1);
+
+    }
+    static void Calc(int num){
+      int i;
+      
+
+      for(i = 0; i <= 10; i++){
+        int res = num * i;
+        Console.WriteLine("{0} x {1} = {2}", num, i, res);
+      }
+    }
+  
+}
+todos os codigos so funciona no replit
